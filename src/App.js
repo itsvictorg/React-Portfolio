@@ -1,15 +1,45 @@
-import './App.css';
-import Nav from './components/nav.js';
-import Homepage from './components/homepage.js';
-import Header from './components/header';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-export default function App() {
+import About from './components/about-me';
+import Homepage from './components/homepage';
+import Projects from './components/projects.js';
+import Contact from './components/contact.js';
+import Nav from './components/nav';
+
+
+
+function App() {
   return (
-   <div class ="app">
-    <Header />
-    </div>
+  
+      <Router>
+      <Nav />
+        <div className="flex-column justify-flex-start min-100-vh">
+
+          <div className="container">
+            <Routes>
+              <Route 
+                path="/" 
+                element={<Homepage />} 
+              />
+              <Route 
+                path="/about" 
+                element={<About />} 
+              />
+              <Route 
+                path="/projects" 
+                element={<Projects />} 
+              />
+              <Route 
+                path="/contact" 
+                element={<Contact />} 
+              />
+            </Routes>
+          </div>
+        </div>
+      </Router>
+
   );
 }
 
-
-
+export default App;

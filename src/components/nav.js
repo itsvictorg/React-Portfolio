@@ -4,6 +4,15 @@ import { NavLink } from "react-router-dom";
 function Nav() {
     return (
         <div className='topnav'>
+            <div>
+            <NavLink
+                    activeClassName="navbar__link--active"
+                    className="navbar__link"
+                    to="/"
+                >
+                    HOME
+                </NavLink>
+            </div>
             <div className='topnav-left'>
                 <NavLink
                     activeClassName="navbar__link--active"
@@ -17,10 +26,11 @@ function Nav() {
                 <NavLink
                     activeClassName="navbar__link--active"
                     className="navbar__link"
-                    to="/portfolio"
+                    to="/projects"
                 >
-                    PORTFOLIO
+                    PROJECTS
                 </NavLink>
+                <div>
                 <NavLink
                     activeClassName="navbar__link--active"
                     className="navbar__link"
@@ -28,13 +38,16 @@ function Nav() {
                 >
                     CONTACT
                 </NavLink>
+                </div>
+                <div>
                 <NavLink
                     activeClassName="navbar__link--active"
                     className="navbar__link"
-                    to="/resume"
+                    to="https://drive.google.com/file/d/1IEeKGaZJlcc0Hvq03ZpclHQvgCQihBVz/view?usp=sharing"
                 >
                     RESUME
                 </NavLink>
+                </div>
             </div>
         </div>
     );

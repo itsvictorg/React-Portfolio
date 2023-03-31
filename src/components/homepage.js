@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 
 
@@ -9,7 +10,7 @@ export default function Homepage() {
     <body>
         <h1>Victor Gonzalez</h1>
         <p>Hi! I'm a software developer. I love solving problems and learning new things.</p>
-        <button>About Me</button>
+        <Link to="/about" class = "button">About Me</Link>
     </body>
     );
 }
