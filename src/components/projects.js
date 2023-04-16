@@ -4,6 +4,7 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import CardComponent from "./Card";
+import MediaQuery from "react-responsive";
 
 const blogImage = require("../assets/images/blog-app.png");
 const textEditorImage = require("../assets/images/JATE.png");
@@ -16,7 +17,18 @@ const containerStyle = {
   alignItems: "center",
   flexDirection: "column",
   textAlign: "center",
+
  
+}
+
+const mobileContainerStyle = {
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  flexDirection: "column",
+  textAlign: "center",
+  height: "100vh",
+
 }
 
 const rowStyle = {
@@ -30,10 +42,26 @@ const rowStyle = {
   margin: "1rem",
 }
 
+const mobileRowStyle = {
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  flexDirection: "row",
+  textAlign: "center",
+  width: "95%",
+  margin: "1rem",
+}
+
 const fontStyle = {
   fontSize: "2.5rem",
   color: "white",
 }
+
+const mobileFontStyle = {
+  fontSize: "1.5rem",
+  color: "white",
+}
+
 
 
 
@@ -71,13 +99,14 @@ const projects = [
       "This is a project I collaborated on with a team of 5. It is a full stack application utilizing node.js, express.js, handlebars.js, mySQL, sequelize, npm, bcrypt, and more. I contributed mostly to the back-end portion of this project by setting up the database models, server routes. I also created an api to handle user registration and authentication as well as rendering data from the mySQL database to the user interface. ",
     image: dayPlannerImage,
     github_link: "https://github.com/Adam42288/team-4-project",
-    deployed_link: "/",
+    deployed_link: "https://adam42288.github.io/team-4-project/",
   },
 ];
 
 export default function Projects() {
   return (
     <>
+    <MediaQuery query="(min-width: 769px)">
       <Container fluid style={containerStyle}>
       <Row style={rowStyle}>
       <h1 style={fontStyle}>PROJECTS</h1>
@@ -93,6 +122,27 @@ export default function Projects() {
       
       </Row>
       </Container>
+
+      </MediaQuery>
+
+      <MediaQuery query="(max-width: 1224px)">
+
+<Container fluid style={mobileContainerStyle}>
+      <Row style={mobileRowStyle}>
+      <h1 style={mobileFontStyle}>PROJECTS</h1>
+      </Row>
+
+      <Row style={mobileRowStyle}>
+          
+      {projects.map((project, i) => {
+        return (
+         <CardComponent key={i} name={project.name} description={project.description} image={project.image} github_link={project.github_link} deployed_link={project.deployed_link} />
+        );
+      })}
+      
+      </Row>
+      </Container>
+      </MediaQuery>
     </>
   );
 }
