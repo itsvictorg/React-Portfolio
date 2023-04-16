@@ -1,5 +1,5 @@
 {
-  "homepage" : "https://itsvictorg.github.io/React-Portfolio/",
+  "homepage": "https://itsvictorg.github.io/React-Portfolio/",
   "name": "react-portfolio",
   "version": "0.1.0",
   "private": true,
@@ -7,10 +7,13 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "bootstrap": "^5.3.0-alpha3",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.7.4",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.9.0",
     "react-scripts": "5.0.1",
+    "react-tsparticles": "^2.9.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -18,8 +21,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -40,6 +43,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^5.0.0"
+    "gh-pages": "^5.0.0",
+    "tailwindcss": "^3.3.1"
   }
 }
