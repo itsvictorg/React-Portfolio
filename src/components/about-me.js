@@ -4,7 +4,7 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import MediaQuery from "react-responsive";
-import { Card } from "react-bootstrap";
+// import { Card } from "react-bootstrap";
 
 const containerStyle = {
     display: "flex",
@@ -26,10 +26,11 @@ const mobileContainerStyle = {
     alignItems: "center",
     flexDirection: "column",
     textAlign: "center",
-    width: "100vw",
+    width: "90vw",
     height: "100vh",
-    margin: "auto",
-    padding: "2rem",
+    margin: "2rem",
+    padding: "1rem",
+    paddingTop: "6rem",
 }
 
 const fontStyle = {
@@ -38,33 +39,39 @@ const fontStyle = {
     
 }
 
+const buttonStyle = {
+    fontSize: "1.2rem",
+    color: "black",
+}
+
+
 const mobileFontStyle = {
-    fontSize: "1rem",
+    fontSize: "1.1rem",
     color: "white",
 }
 
-const cardStyle = {  
-    width: "90%",
-    height: "80%",
-    display: "flex",
-    backgroundColor: "black",
-    position: "absolute",
-    zIndex: "-1",
-    justifyContent: "center",
-    alignItems: "center",
-    flexDirection: "column",
-    textAlign: "center",
-    margin: "auto",
-    padding: "2rem",
+// const cardStyle = {  
+//     width: "90%",
+//     height: "80%",
+//     display: "flex",
+//     backgroundColor: "black",
+//     position: "absolute",
+//     zIndex: "-1",
+//     justifyContent: "center",
+//     alignItems: "center",
+//     flexDirection: "column",
+//     textAlign: "center",
+//     margin: "auto",
+//     padding: "2rem",
 
-}
+// }
 
 export default function AboutMe() {
   return (
     <>
    <MediaQuery query="(min-width: 769px)">
     <Container fluid style={containerStyle}>
-    <Card style={cardStyle}/>
+    {/* <Card style={cardStyle}/> */}
         <p style={fontStyle}>
         Hello, I'm Victor Gonzalez! I am a software developer specializing in
         web development. I have experience in front-end and back-end
@@ -82,13 +89,13 @@ export default function AboutMe() {
         and learn as much as possible from my team and senior developers.
         </p>
         <div>
-      <Button href = "#/projects" variant="light" >See My Projects</Button>
+      <Button href = "#/projects" variant="light" style={buttonStyle} >See My Projects</Button>
       </div>
       
       </Container>
       </MediaQuery>
 
-      <MediaQuery query="(max-width: 1224px)">
+      <MediaQuery query="(max-width: 880px)">
 
       <Container fluid style={mobileContainerStyle}>
         <p style={mobileFontStyle}>

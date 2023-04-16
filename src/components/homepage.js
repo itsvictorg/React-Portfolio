@@ -4,7 +4,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
+// import Card from "react-bootstrap/Card";
 import MediaQuery from "react-responsive";
 
 import "../index.css";
@@ -20,9 +20,14 @@ const containerStyle = {
 };
 
 const fontStyle = {
-  fontSize: "2.0rem",
+  fontSize: "2.5rem",
   color: "white",
 };
+
+const buttonStyle = {
+    fontSize: "1.2rem",
+    color: "black",
+}
 
 
 const rowStyle = {
@@ -33,21 +38,21 @@ const rowStyle = {
 
 
 
-const cardStyle = {  
-    width: "80%",
-    height: "75%",
-    display: "flex",
-    zIndex: "-1",
-    position: "absolute",
-    backgroundColor: "black",
-    justifyContent: "center",
-    alignItems: "center",
-    flexDirection: "column",
-    textAlign: "center",
-    margin: "auto",
-    opacity: "0.8",
+// const cardStyle = {  
+//     width: "80%",
+//     height: "75%",
+//     display: "flex",
+//     zIndex: "-1",
+//     position: "absolute",
+//     backgroundColor: "black",
+//     justifyContent: "center",
+//     alignItems: "center",
+//     flexDirection: "column",
+//     textAlign: "center",
+//     margin: "auto",
+//     opacity: "0.8",
   
-}
+// }
 
 
 
@@ -75,7 +80,7 @@ export default function Homepage() {
     <>
    <MediaQuery query="(min-width: 769px)">
       <Container fluid className="container" style={containerStyle}>
-      <Card style={cardStyle}/>
+      
         
         <Row style={rowStyle}>
           <Row>
@@ -94,7 +99,7 @@ export default function Homepage() {
           </Row>
         </Row>
         <Container>
-        <Button href="#/about" variant="light">
+        <Button href="#/about" variant="light" style={buttonStyle}>
         About Me
         </Button>
         </Container>

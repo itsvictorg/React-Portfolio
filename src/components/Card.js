@@ -2,6 +2,7 @@ import React from 'react';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
+import MediaQuery from 'react-responsive';
 
 export default function CardComponent(props) {
   const cardStyle = {
@@ -9,12 +10,21 @@ export default function CardComponent(props) {
     margin: '1rem',
     padding: '1rem',
     display: 'inline-block',
-    height: 'auto',
+    height: '47rem',
     boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
     
       
     
   };
+
+  const mobileCardStyle = {
+    width: '35rem',
+    margin: '1rem',
+    padding: '1rem',
+    display: 'inline-block',
+    height: 'fit-content',
+    boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
+  }
 
   const buttonStyle = {
     margin: '0.5rem',
@@ -25,7 +35,8 @@ export default function CardComponent(props) {
   }
 
   return (
-
+    <>
+    <MediaQuery query="(min-width: 769px)">
     <Card style = {cardStyle} class = "shadow">
       <Card.Img variant="top" src={props.image} />
       <Card.Body>
@@ -40,6 +51,27 @@ export default function CardComponent(props) {
         </Col>
       </Card.Body>
     </Card>
+    </MediaQuery>
+
+    <MediaQuery query="(max-device-width: 1224px)">
+
+    <Card style = {mobileCardStyle} class = "shadow">
+      <Card.Img variant="top" src={props.image} />
+      <Card.Body>
+        <Card.Title>{props.name}</Card.Title>
+        <Card.Text>
+          {props.description}
+        </Card.Text>
+        <Col>
+        <Button variant="dark" href = {props.github_link} style={buttonStyle}>Github</Button>
+      
+        <Button variant="dark" href = {props.deployed_link} style={buttonStyle}>Deployed App</Button>
+        </Col>
+      </Card.Body>
+    </Card>
+
+      </MediaQuery>
+      </>
         
 
     // <div className="container">
