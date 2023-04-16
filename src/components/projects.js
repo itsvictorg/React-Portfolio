@@ -6,6 +6,8 @@ import Row from "react-bootstrap/Row";
 import CardComponent from "./Card";
 import MediaQuery from "react-responsive";
 
+import "../index.css";
+
 const blogImage = require("../assets/images/blog-app.png");
 const textEditorImage = require("../assets/images/JATE.png");
 const residentPortalImage = require("../assets/images/resident-portal.png");
@@ -27,8 +29,8 @@ const mobileContainerStyle = {
   alignItems: "center",
   flexDirection: "column",
   textAlign: "center",
-  height: "100vh",
-
+  width: "100vw",
+  height: "80%",
 }
 
 const rowStyle = {
@@ -112,7 +114,7 @@ export default function Projects() {
       <h1 style={fontStyle}>PROJECTS</h1>
       </Row>
 
-      <Row style={rowStyle}>
+      <Row style={rowStyle} className="projects">
           
       {projects.map((project, i) => {
         return (

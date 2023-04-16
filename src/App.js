@@ -4,6 +4,7 @@ import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import "./index.css";
 
 import "bootstrap/dist/css/bootstrap.min.css";
+import './assets/fonts/fonts.css';
 
 import About from "./components/about-me";
 import Homepage from "./components/homepage";
@@ -46,17 +47,7 @@ const App = () => {
       
       <Router>
         <MyNavbar />
-        <div
-      style={{
-        backgroundColor: '#212121',
-        width: '100%',
-        maxWidth: '100%',
-        maxHeight: '100%',
-        height: '100%',
-        position: 'absolute',
-        zIndex: '-1',
-      }}
-    />
+        <div className="background"/>
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/about" element={<About />} />
