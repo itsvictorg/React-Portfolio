@@ -8,10 +8,13 @@ export default function CardComponent(props) {
   const cardStyle = {
     width: '35rem',
     margin: '1rem',
+    marginRight: '2rem',
+    margineLeft: '2rem',
     padding: '1rem',
     display: 'inline-block',
     height: '47rem',
-    boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
+    boxShadow: '0 4px 8px 0 rgb(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0)',
+    borderRadius: '20px',
     
       
     

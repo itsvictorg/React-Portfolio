@@ -28,7 +28,7 @@
   left: 0;
   margin: 0;
   padding: 0;
-  background: #212121;
+  background: #000000;
   overflow-x: hidden;
   overflow-y: auto;
   z-index: -1;
@@ -40,7 +40,7 @@
   width: 20px;
   height: 20px;
   background: rgba(255, 255, 255, 0.082);
-  animation: animate 19s linear infinite;
+  animation: animate 30s linear infinite;
   z-index: -1;
 }
 
@@ -52,14 +52,14 @@
   width: 290px;
   height: 290px;
   bottom: -290px;
-  animation-delay: 1s;
+  animation-delay: 0s;
 }
 .background li:nth-child(1) {
   left: 60%;
   width: 132px;
   height: 132px;
   bottom: -132px;
-  animation-delay: 3s;
+  animation-delay: 1s;
 }
 .background li:nth-child(2) {
   left: 17%;

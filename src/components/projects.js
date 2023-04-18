@@ -12,6 +12,9 @@ const blogImage = require("../assets/images/blog-app.png");
 const textEditorImage = require("../assets/images/JATE.png");
 const residentPortalImage = require("../assets/images/resident-portal.png");
 const dayPlannerImage = require("../assets/images/day-planner.png");
+const recipeSearchImage = require("../assets/images/Recipe-Search.png");
+
+
 
 const containerStyle = {
   display: "flex",
@@ -19,8 +22,8 @@ const containerStyle = {
   alignItems: "center",
   flexDirection: "column",
   textAlign: "center",
-
- 
+  width: "75vw",
+  
 }
 
 const mobileContainerStyle = {
@@ -35,6 +38,7 @@ const mobileContainerStyle = {
 
 const rowStyle = {
   display: "flex",
+  flexWrap: "wrap",
   justifyContent: "center",
   alignItems: "center",
   flexDirection: "row",
@@ -71,6 +75,14 @@ const mobileFontStyle = {
 
 
 const projects = [
+  {
+    name: "Recipe Search App",
+    description:
+      "This site was designed so that a user may search for random recipes and save those recipes. The user then can navigate to their very own personal 'Dashboard' where they may make changes to that recipe with their own personal preferences, provided they have signed up and logged in. Even user's not signed up with our site have the option to use the random 'Recipe Searcher' to find recipes they may suit their needs.",
+    image: recipeSearchImage,
+    github_link: "https://github.com/itsvictorg/Recipe-Search",
+    deployed_link: "https://recipe-p3-mern.herokuapp.com/",
+  },
   {
     name: "Social Media Blog App",
     description:
