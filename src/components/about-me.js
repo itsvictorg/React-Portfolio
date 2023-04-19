@@ -53,14 +53,21 @@ export default function AboutMe() {
       <MediaQuery query="(min-width: 769px)">
         <Container fluid style={containerStyle} className="headline-faster">
           <p style={fontStyle}>
-          Hello, I'm Victor Gonzalez! I am a software developer specializing
-            in web development. I really enjoy solving problems and I think coding
-            is really exciting because of that. I see it as a puzzle with
+            Hello, I'm Victor Gonzalez! I am a software developer specializing
+            in web development. I really enjoy solving problems and I think
+            coding is really exciting because of that. I see it as a puzzle with
             endless amounts of solutions and finding the most efficient and
             effective solution is the challenge. I have experience in front-end
             and back-end development. Most of my front-end experience is in
             JavaScript, React.js, HTML, and CSS. My back-end experience is with
             Node.js, Express.js, mySQL, and MongoDB.
+          </p>
+          <p style={fontStyle}>
+            When I'm not coding or working, I really enjoy playing video games,
+            making music, and learning new useful(sometimes not so useful but
+            fun) skills. I really enjoy being creative and I'm always looking
+            for new ways to get inspired. I think inspiration can come from many
+            different sources so exploring new things is always fun.
           </p>
           <div>
             <Button
@@ -82,13 +89,20 @@ export default function AboutMe() {
         >
           <p style={mobileFontStyle}>
             Hello, I'm Victor Gonzalez! I am a software developer specializing
-            in web development. I really enjoy solving problems and I think coding
-            is really exciting because of that. I see it as a puzzle with
+            in web development. I really enjoy solving problems and I think
+            coding is really exciting because of that. I see it as a puzzle with
             endless amounts of solutions and finding the most efficient and
             effective solution is the challenge. I have experience in front-end
             and back-end development. Most of my front-end experience is in
             JavaScript, React.js, HTML, and CSS. My back-end experience is with
             Node.js, Express.js, mySQL, and MongoDB.
+          </p>
+          <p style={mobileFontStyle}>
+            When I'm not coding or working, I really enjoy playing video games,
+            making music, and learning new useful(sometimes not so useful but
+            fun) skills. I really enjoy being creative and I'm always looking
+            for new ways to get inspired. I think inspiration can come from many
+            different sources so exploring new things is always fun.
           </p>
           <div>
             <Button
