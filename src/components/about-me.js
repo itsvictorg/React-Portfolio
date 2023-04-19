@@ -91,7 +91,7 @@ export default function AboutMe() {
         finding the most efficient and effective solution is the challenge. 
         </p>
         <div>
-      <Button href = "#/projects" variant="light" >See My Projects</Button>
+        <Button href = "#/projects" variant="outline-light" style={buttonStyle} >See My Projects</Button>
       </div>
       </Container>
 
