@@ -63,9 +63,9 @@ export default function AboutMe() {
             Node.js, Express.js, mySQL, and MongoDB.
           </p>
           <p style={fontStyle}>
-            When I'm not coding or working, I really enjoy playing video games,
+          When I'm not coding or working, I enjoy playing video games,
             making music, and learning new useful(sometimes not so useful but
-            fun) skills. I really enjoy being creative and I'm always looking
+            fun) skills. I love being creative and I'm always looking
             for new ways to get inspired. I think inspiration can come from many
             different sources so exploring new things is always fun.
           </p>
@@ -98,9 +98,9 @@ export default function AboutMe() {
             Node.js, Express.js, mySQL, and MongoDB.
           </p>
           <p style={mobileFontStyle}>
-            When I'm not coding or working, I really enjoy playing video games,
+            When I'm not coding or working, I enjoy playing video games,
             making music, and learning new useful(sometimes not so useful but
-            fun) skills. I really enjoy being creative and I'm always looking
+            fun) skills. I love being creative and I'm always looking
             for new ways to get inspired. I think inspiration can come from many
             different sources so exploring new things is always fun.
           </p>
