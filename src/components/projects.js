@@ -22,7 +22,7 @@ const containerStyle = {
   alignItems: "center",
   flexDirection: "column",
   textAlign: "center",
-  width: "75vw",
+  width: "85vw",
   
 }
 
@@ -121,7 +121,7 @@ export default function Projects() {
   return (
     <>
     <MediaQuery query="(min-width: 769px)">
-      <Container fluid style={containerStyle}>
+      <Container fluid style={containerStyle} className="headline-faster">
       <Row style={rowStyle}>
       <h1 style={fontStyle}>PROJECTS</h1>
       </Row>
@@ -141,11 +141,11 @@ export default function Projects() {
 
       <MediaQuery query="(max-width: 1224px)">
 
-<Container fluid style={mobileContainerStyle}>
+<Container fluid style={mobileContainerStyle} className="headline-faster">
       <Row style={mobileRowStyle}>
       <h1 style={mobileFontStyle}>PROJECTS</h1>
       </Row>
-
+ 
       <Row style={mobileRowStyle}>
           
       {projects.map((project, i) => {

@@ -3,6 +3,7 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import { Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import "../index.css";
 
 
 export default function Contact() {
@@ -53,7 +54,7 @@ export default function Contact() {
 
     return(
         <>
-        <Container fluid style={containerStyle}>
+        <Container fluid style={containerStyle} className="headline-faster">
             
         <Row style={rowStyle}>
             <h1 style={h1Style}>Contact</h1>

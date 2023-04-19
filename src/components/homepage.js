@@ -6,6 +6,7 @@ import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 // import Card from "react-bootstrap/Card";
 import MediaQuery from "react-responsive";
+import { TypeAnimation } from "react-type-animation";
 
 import "../index.css";
 
@@ -16,19 +17,29 @@ const containerStyle = {
   flexDirection: "column",
   textAlign: "center",
   height: "100vh",
-  width: "100vw",
+  width: "65vw",
 };
 
 const fontStyle = {
-  fontSize: "2.5rem",
+  fontSize: "1.5rem",
+  color: "white",
+};
+const h1FontStyle = {
+  fontSize: "3.5rem",
+  color: "white",
+};
+const mobileH1FontStyle = {
+  fontSize: "2rem",
   color: "white",
 };
 
 const buttonStyle = {
-    fontSize: "1.2rem",
-    color: "black",
-}
+  margin: "2rem",
+};
 
+const mobileButtonStyle = {
+  margin: "1rem",
+};
 
 const rowStyle = {
   justifyContent: "flex-start",
@@ -36,109 +47,97 @@ const rowStyle = {
   width: "100%",
 };
 
-
-
-// const cardStyle = {  
-//     width: "80%",
-//     height: "75%",
-//     display: "flex",
-//     zIndex: "-1",
-//     position: "absolute",
-//     backgroundColor: "black",
-//     justifyContent: "center",
-//     alignItems: "center",
-//     flexDirection: "column",
-//     textAlign: "center",
-//     margin: "auto",
-//     opacity: "0.8",
-  
-// }
-
-
-
 const mobileFontStyle = {
-    fontSize: "1.8rem",
-    color: "white",
-}
+  fontSize: "1.0rem",
+  color: "white",
+};
 
 const mobileContainerStyle = {
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    flexDirection: "column",
-    textAlign: "center",
-    width: "100vw",
-    height: "100vh",
-    margin: "auto",
-    paddingLeft: "3rem",
-}
-
-
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  flexDirection: "column",
+  textAlign: "center",
+  width: "fit-content",
+  height: "100vh",
+  margin: "auto",
+};
 
 export default function Homepage() {
   return (
     <>
-   <MediaQuery query="(min-width: 769px)">
-      <Container fluid className="container" style={containerStyle}>
-      
-        
-        <Row style={rowStyle}>
-          <Row>
-            
-            <Col>
+      <MediaQuery query="(min-width: 769px)">
+        <Container fluid className="container" style={containerStyle}>
+          <Row style={rowStyle}>
             <Row>
-              <p style={fontStyle}>Hi! I'm a software developer.</p>
-            </Row>
-              <Row>
-                <p style={fontStyle}>
-                  {" "}
-                  I love solving problems and learning new things.
+              <Col>
+                <Row>
+                  <TypeAnimation
+                    sequence={[
+                      "Hi! My name is Victor.",
+                      () => {
+                        console.log("Sequence completed"); // Place optional callbacks anywhere in the array
+                      },
+                    ]}
+                    wrapper="span"
+                    cursor={true}
+                    repeat={false}
+                    style={h1FontStyle}
+                  />
+                </Row>
+                <p className="headline" style={fontStyle}>
+                  I'm a software developer specializing in full-stack web
+                  development
                 </p>
-              </Row>
-            </Col>
+                <Button
+                  href="#/about"
+                  variant="outline-light"
+                  className="button"
+                  style={buttonStyle}
+                >
+                  About Me
+                </Button>
+              </Col>
+            </Row>
           </Row>
-        </Row>
-        <Container>
-        <Button href="#/about" variant="light" style={buttonStyle}>
-        About Me
-        </Button>
+          <Container></Container>
         </Container>
-        
-              
-      </Container>
       </MediaQuery>
 
-        <MediaQuery query="(max-width: 1224px)">
-
+      <MediaQuery query="(max-width: 1224px)">
         <Container fluid className="container" style={mobileContainerStyle}>
-       
-        <Row style={rowStyle}>
-          <Row>
-            
-            <Col>
             <Row>
-              <p style={mobileFontStyle}>Hi! I'm a software developer.</p>
-            </Row>
-              <Row>
-                <p style={mobileFontStyle}>
-                  I love solving problems and learning new things.
+              <Col>
+                <Row>
+                  <TypeAnimation
+                    sequence={[
+                      "Hi! My name is Victor.",
+                      () => {
+                        console.log("Sequence completed"); // Place optional callbacks anywhere in the array
+                      },
+                    ]}
+                    wrapper="span"
+                    cursor={true}
+                    repeat={false}
+                    style={mobileH1FontStyle}
+                  />
+                </Row>
+                <p className="headline" style={mobileFontStyle}>
+                  I'm a software developer specializing in full-stack web
+                  development
                 </p>
-              </Row>
-            </Col>
-          </Row>
-        </Row>
-        
-        <Button href="#/about" variant="light">
-        About Me
-        </Button>
-       
-              
-      </Container>
-
-
-        </MediaQuery>
-
-
+                <Button
+                  href="#/about"
+                  variant="outline-light"
+                  className="button"
+                  style={mobileButtonStyle}
+                >
+                  About Me
+                </Button>
+              </Col>
+            </Row>
+        </Container>
+      </MediaQuery>
     </>
   );
 }
