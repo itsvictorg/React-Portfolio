@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/React-Portfolio/static/css/main.fccbf078.css",
-    "main.js": "/React-Portfolio/static/js/main.6a44121b.js",
+    "main.js": "/React-Portfolio/static/js/main.07500ad2.js",
     "static/media/day-planner.png": "/React-Portfolio/static/media/day-planner.2b48181db2dd90e6456a.png",
     "static/media/resident-portal.png": "/React-Portfolio/static/media/resident-portal.3a1d43fea36591314ded.png",
     "static/media/Recipe-Search.png": "/React-Portfolio/static/media/Recipe-Search.451e1e34b97ef5c2bf84.png",
@@ -9,10 +9,10 @@
     "static/media/JATE.png": "/React-Portfolio/static/media/JATE.c170dbf44f3c23e82b45.png",
     "index.html": "/React-Portfolio/index.html",
     "main.fccbf078.css.map": "/React-Portfolio/static/css/main.fccbf078.css.map",
-    "main.6a44121b.js.map": "/React-Portfolio/static/js/main.6a44121b.js.map"
+    "main.07500ad2.js.map": "/React-Portfolio/static/js/main.07500ad2.js.map"
   },
   "entrypoints": [
     "static/css/main.fccbf078.css",
-    "static/js/main.6a44121b.js"
+    "static/js/main.07500ad2.js"
   ]
 }
