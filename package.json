@@ -1,5 +1,5 @@
 {
-  "homepage": "https://itsvictorg.github.io/React-Portfolio/",
+  "homepage": "https://victor-gonzalez.dev",
   "name": "react-portfolio",
   "version": "0.1.0",
   "private": true,
@@ -21,10 +21,11 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "add-domain": "echo \"https://victor-gonzalez.dev\" > build/CNAME",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "npm run add-domain && gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
