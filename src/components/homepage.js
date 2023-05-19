@@ -74,7 +74,7 @@ export default function Homepage() {
                 <Row>
                   <TypeAnimation
                     sequence={[
-                      "Hi! My name is Victor.",
+                      "Hello there! I'm Victor,",
                       () => {
                         console.log("Sequence completed"); // Place optional callbacks anywhere in the array
                       },
@@ -86,8 +86,7 @@ export default function Homepage() {
                   />
                 </Row>
                 <p className="headline" style={fontStyle}>
-                  I'm a software developer specializing in full-stack web
-                  development
+                A versatile software engineer with a specialization in full-stack web development.
                 </p>
                 <Button
                   href="#/about"
@@ -111,7 +110,7 @@ export default function Homepage() {
                 <Row>
                   <TypeAnimation
                     sequence={[
-                      "Hi! My name is Victor.",
+                      "Hello there! My name is Victor.",
                       () => {
                         console.log("Sequence completed"); // Place optional callbacks anywhere in the array
                       },
@@ -123,8 +122,7 @@ export default function Homepage() {
                   />
                 </Row>
                 <p className="headline" style={mobileFontStyle}>
-                  I'm a software developer specializing in full-stack web
-                  development
+                a versatile software engineer with a specialization in full-stack web development.
                 </p>
                 <Button
                   href="#/about"
