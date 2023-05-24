@@ -86,7 +86,7 @@ const projects = [
   {
     name: "Social Media Blog App",
     description:
-      "This is a project I built from the ground up. It is a full stack application I built using node.js, express.js, mySQL, handlebars.js, and sequelize. This project was really fun and frustrating to build at the same time. It helped me really understand how to communicate between the back-end and front-end effectively and efficiently. I think the biggest take away for me from this project was to make sure to write efficient and reusable code because even small projects like this can turn into monsters if not written efficiently. ",
+      "I successfully developed a comprehensive full-stack application from scratch, utilizing an array of technologies. Leveraging the power of Node.js, Express.js, MySQL, Handlebars.js, and JavaScript, I meticulously crafted a robust and dynamic solution. While the project posed both enjoyable and challenging moments, it proved instrumental in honing my skills in seamless communication between the back-end and front-end. A vital lesson I learned from this experience was the importance of writing efficient and reusable code, as even seemingly small projects like this can quickly grow into formidable beasts if not approached with efficiency in mind. By emphasizing code optimization and reusability, I not only delivered a successful project but also deepened my understanding of sustainable development practices.",
     image: blogImage,
     github_link: "https://github.com/itsvictorg/Blog-App",
     deployed_link: "https://www.notenoughstacks.com/",
@@ -94,7 +94,7 @@ const projects = [
   {
     name: "Text Editor PWA",
     description:
-      "A progressive web application used to create notes or code snippets with or without an internet connection so they can be retrieved later. This project was built using HTML, CSS, JavaScript, and Webpack. I built this project to learn more about progressive web applications and how they work. I also wanted to learn more about how to use the local storage API to store data on the user's browser. ",
+      "I created a progressive web application that allows users to effortlessly create and store notes or code snippets, even without an internet connection, ensuring easy access whenever needed. This project was built using HTML, CSS, JavaScript, and Webpack, serving as a platform for me to explore the world of progressive web applications and their functionalities. Additionally, it provided an opportunity for me to delve into the local storage API and learn how to effectively store data directly in the user's browser. Through this project, I gained valuable insights into the potential of progressive web applications and expanded my skills in utilizing the local storage API for seamless data management. ",
     image: textEditorImage,
     github_link: "https://github.com/itsvictorg/Text-Editor-PWA",
     deployed_link: "https://j-a-t-e-pwa.herokuapp.com/",
@@ -102,7 +102,7 @@ const projects = [
   {
     name: "Resident Portal",
     description:
-      "This This is a project I collaborated on with a team of four. I contributed mostly to the JS portion of the code using third-party APIs to get information about events and weather from given a date and location to help users create plans for their days off. a project I collaborated on with a team of 5. It is a full stack application utilizing node.js, express.js, handlebars.js, mySQL, sequelize, npm, bcrypt, and more. I contributed mostly to the back-end portion of this project by setting up the database models, server routes. I also created an api to handle user registration and authentication as well as rendering data from the mySQL database to the user interface. ",
+      "I had the opportunity to collaborate with a talented team of five individuals on an exciting project. Our collective effort resulted in a robust full-stack application, where we leveraged a range of technologies such as JavaScript, Node.js, Express.js, Handlebars.js, and MySQL. My primary focus during the collaboration was on the back-end development, where I played a significant role in setting up the database models and server routes. Additionally, I took charge of implementing user registration and authentication through a custom API. Furthermore, I seamlessly integrated the MySQL database with the user interface, ensuring smooth rendering of data. It was a rewarding experience to contribute to this project, utilizing my expertise to create a functional and secure application that empowers users to plan their days off by accessing event and weather information through third-party APIs. ",
     image: residentPortalImage,
     github_link: "https://github.com./itsvictorg/Resident-Portal",
     deployed_link: "https://resident-portal.herokuapp.com/",
