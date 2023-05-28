@@ -12,9 +12,10 @@ export default function CardComponent(props) {
     margineLeft: '2rem',
     padding: '1rem',
     display: 'inline-block',
-    height: '47rem',
+    height: '52rem',
     boxShadow: '0 4px 8px 0 rgb(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0)',
     borderRadius: '20px',
+    textAlign: 'left',
     
       
     
@@ -47,11 +48,13 @@ export default function CardComponent(props) {
         <Card.Text>
           {props.description}
         </Card.Text>
+        <center>
         <Col>
         <Button variant="dark" href = {props.github_link} style={buttonStyle}>Github</Button>
       
         <Button variant="dark" href = {props.deployed_link} style={buttonStyle}>Deployed App</Button>
         </Col>
+        </center>
       </Card.Body>
     </Card>
     </MediaQuery>

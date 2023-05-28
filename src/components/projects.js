@@ -13,6 +13,7 @@ const textEditorImage = require("../assets/images/JATE.png");
 const residentPortalImage = require("../assets/images/resident-portal.png");
 const dayPlannerImage = require("../assets/images/day-planner.png");
 const recipeSearchImage = require("../assets/images/Recipe-Search.png");
+const bestPriceImage = require("../assets/images/best-price.png");
 
 
 
@@ -75,6 +76,13 @@ const mobileFontStyle = {
 
 
 const projects = [
+  {
+    name: "Best Price WebScraper",
+    description: "The Product Price Checker is a Python-based web scraping application that retrieves product information and prices from popular online retailers through Google Shopping. It allows users to search for product prices by entering the model number and displays the lowest price from the top results. The application filters the search to specific retailers and excludes products with prices less than or equal to zero. It provides a convenient way to compare prices and make informed purchasing decisions. The deployed link is actually a download link for the exe file",
+    image: bestPriceImage,
+    github_link: "https://github.com/itsvictorg/best-price-finder",
+    deployed_link: "https://github.com/itsvictorg/best-price-finder/raw/main/lowest-price-finder.exe",
+  },
   {
     name: "Recipe Search App",
     description:
